@@ -1,0 +1,82 @@
+@font-face { /* Définition d'une nouvelle police nommée LearningCurveProRegular */
+  font-family: 'aquilinetwo';
+  src: url('fonts/aquilinetwo_regular_macroman/AquilineTwo-webfont.eot') format('eot'),
+       url('fonts/aquilinetwo_regular_macroman/AquilineTwo-webfont.woff') format('woff'),
+       url('fonts/aquilinetwo_regular_macroman/AquilineTwo-webfont.ttf') format('truetype'),
+       url('fonts/aquilinetwo_regular_macroman/AquilineTwo-webfont.svg') format('svg');
+}
+
+body {
+  background-image: url("images/fond.jpg");
+  color: #EEE;
+  text-shadow: 0 0 2px #EEE; /* halo magique */
+  text-align: justify;
+}
+
+h1, h2 {
+  font-family: 'aquilinetwo', Arial, sans-serif, serif;
+}
+
+h1 {
+  color: #FF4C4C;
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  color: #FF7F7F;
+  font-size: 30px;
+}
+
+#citation {
+  text-align: center;
+}
+
+section {
+  display: inline-block;
+  vertical-align: top;
+  width: 27%;
+  min-width: 200px;
+  margin: 0 0.5%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+#premieresection {
+  margin-left: 11%;
+}
+
+#photocv {
+  /*display: block;
+  margin: auto; pour la centrer, HS pour l'activité*/
+  border: 3px #FFF solid;
+  border-radius: 100%;
+  position: absolute;
+  right: 2%;
+  top: 5%;
+}
+
+#liseret {
+  background-image: url("images/liseret.jpg");
+  border-radius: 10px;
+  position: absolute;
+  width: 10%;
+  height: 90%;
+  box-shadow: 0 0 5px #FFF;
+}
+
+@media screen and (max-width: 1024px) {
+  #liseret {
+    display: none;
+  }
+
+  section {
+    display: block;
+    margin: 0;
+    width: auto;
+  }
+
+  #premieresection {
+    margin-left: 0;
+  }
+}
